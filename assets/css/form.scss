@@ -52,6 +52,7 @@
     align-items: center;
     width: 288px;
     height: 288px;
+    margin-bottom: 24px;
     background: #2C7DFA;
     border-radius: 10px;
     overflow: hidden;
@@ -83,6 +84,10 @@
     }
   }
 
+  &-btn {
+    margin-bottom: 12px;
+  }
+
   &-img {
     position: relative;
     z-index: 20;
@@ -93,4 +98,25 @@
   font-size: 16px;
   color: red;
   font-weight: 400;
+}
+
+.qrcode {
+  position: relative;
+  z-index: 12;
+}
+
+@media screen and (max-width: 768px) {
+  .qr {
+    &-bg {
+      background: #3685FF;
+
+      &::before {
+        background: #2C7DFA;
+      }
+
+      &::after {
+        background: #2C7DFA;
+      }
+    }
+  }
 }
