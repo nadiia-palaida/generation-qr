@@ -62,7 +62,6 @@ export default {
     },
     download() {
       let canvas = this.$refs.qrcode.children[0]
-      console.log('canvas', canvas)
       let anchor = document.createElement("a");
       anchor.href = canvas.toDataURL("image/png");
       anchor.download = "IMAGE.PNG";
